@@ -85,10 +85,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 pt-16 pb-24">
+        <div className="relative max-w-7xl mx-auto px-4 pt-5 pb-24">
           {/* Navigation */}
           <nav className="flex items-center justify-between mb-16">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 ">
               <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-xl">
                 <Mail className="w-8 h-8 text-white" />
               </div>
