@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { Translation } from '../utils/translations';
 import { LanguageSelector } from './LanguageSelector';
-import { BannerAd, SquareAd } from './AdSenseAd';
+// import { BannerAd, SquareAd } from './AdSenseAd';
 
 interface LandingPageProps {
   onGetStarted: () => void;
@@ -106,9 +106,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           </nav>
 
           {/* Top Banner Ad */}
-          <div className="mb-8">
-            <BannerAd className="w-full flex justify-center" />
-          </div>
+          {/* <div className="mb-8"> */}
+            {/* <BannerAd className="w-full flex justify-center" /> */}
+          {/* </div> */}
 
           {/* Hero Content */}
           <div className="text-center max-w-4xl mx-auto">
@@ -170,9 +170,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           </div>
           
           {/* Ad between title and features */}
-          <div className="mb-12">
+          {/* <div className="mb-12">
             <BannerAd className="w-full flex justify-center" />
-          </div>
+          </div> */}
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
@@ -278,9 +278,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             
             <div className="relative">
               {/* Square Ad */}
-              <div className="mb-6">
+              {/* <div className="mb-6">
                 <SquareAd className="w-full flex justify-center" />
-              </div>
+              </div> */}
               
               <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-3xl p-8">
                 <div className="bg-white rounded-2xl shadow-2xl p-6">

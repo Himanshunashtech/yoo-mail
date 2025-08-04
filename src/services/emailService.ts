@@ -42,7 +42,7 @@ class EmailService {
   private messageListeners: Array<(messages: EmailMessage[]) => void> = [];
   private readonly STORAGE_KEY = 'tempmail_data';
   private readonly MESSAGES_KEY = 'tempmail_messages';
-  private pollingInterval: NodeJS.Timeout | null = null;
+  private pollingInterval: ReturnType<typeof setInterval> | null = null;
   private currentService: 'onesecmail' | 'tempmail' | 'guerrilla' = 'onesecmail';
   private corsProxy: string = CORS_PROXIES[0];
 

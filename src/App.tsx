@@ -5,8 +5,8 @@ import { TempEmailData, EmailMessage } from './types/email';
 import { EmailViewer } from './components/EmailViewer';
 import { EmailDashboard } from './components/EmailDashboard';
 import { LandingPage } from './components/LandingPage';
-import { ReloadInterstitialAd } from './components/ReloadInterstitialAd';
-import { BannerAd } from './components/AdSenseAd';
+// import { ReloadInterstitialAd } from './components/ReloadInterstitialAd';
+// import { BannerAd } from './components/AdSenseAd';
 import { useLanguage } from './hooks/useLanguage';
 
 function App() {
@@ -180,11 +180,11 @@ function App() {
   };
 
   // Show interstitial ad on reload
-  if (showInterstitialAd) {
-    return (
-      <ReloadInterstitialAd onClose={() => setShowInterstitialAd(false)} />
-    );
-  }
+  // if (showInterstitialAd) {
+  //   return (
+  //     <ReloadInterstitialAd onClose={() => setShowInterstitialAd(false)} />
+  //   );
+  // }
 
   if (showLanding) {
     return (
@@ -256,9 +256,9 @@ function App() {
         </div>
 
         {/* Top Banner Ad */}
-        <div className="mb-6">
-          <BannerAd className="w-full flex justify-center" />
-        </div>
+          {/* <div className="mb-6">
+            <BannerAd className="w-full flex justify-center" />
+          </div> */}
 
         {/* Email Display */}
         <div className={`bg-white rounded-2xl shadow-xl p-8 mb-6 border ${
@@ -328,9 +328,9 @@ function App() {
         </div>
 
         {/* Middle Banner Ad */}
-        <div className="mb-6">
+        {/* <div className="mb-6">
           <BannerAd className="w-full flex justify-center" />
-        </div>
+        </div> */}
 
         {/* Timer */}
         <div className={`bg-white rounded-2xl shadow-xl p-6 mb-6 border ${
